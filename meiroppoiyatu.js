@@ -4,6 +4,7 @@ let startpositiony;
 let stage=1;
 let teki;
 let tu;
+let tekitou;
 let rects = [
  [0,350,600,49],
   [0,0,50,600],
