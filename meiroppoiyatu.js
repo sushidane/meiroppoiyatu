@@ -54,9 +54,11 @@ function drawPlayer(){
 }
 
 function drawteki(){
- fill(255,0,0)
- rect(300,200,30,30)
-}
+ if(stage==3){
+  fill(255,0,0)
+  rect(300,200,30,30)
+  tu=log(floor(random(5))) 
+}}
 
 function draw() {
   background(220);
@@ -74,10 +76,8 @@ else if(stage==2){
   })}
   
   drawPlayer()
-  if(stage==3){ 
-    drawteki()
-    tu=log(floor(random(5))) 
-  }
+  drawteki()
+  
 if(stage==1){ 
   rects.forEach(r=>{
     if(r[0]<player.x&&
@@ -118,7 +118,6 @@ if(stage==2){
     }    
   })}   
   
-if(stage==3){  
   if(tu==1){
     teki.x +=3;
   }
@@ -130,7 +129,7 @@ if(stage==3){
   }
   else if(tu==4){
     teki.y -=3;
-  }}
+  }
   
   if(keyCode === RIGHT_ARROW){
     player.x +=3;
@@ -150,8 +149,10 @@ if(stage==3){
     startpositiony=318
   }
   else if(stage==2){
-    startpositionx=280
-    startpositiony=174    
+    //startpositionx=280
+    //startpositiony=174    
+   startpositionx=520
+   startpositiony=40 
   }
   else if(stage==3){
     startpositionx=0
