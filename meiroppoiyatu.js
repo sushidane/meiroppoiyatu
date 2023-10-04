@@ -118,9 +118,8 @@ if(stage==2){
     }    
   })}   
   
-if(stage==3){  if(tu==0){
-  }
-  else if(tu==1){
+if(stage==3){  
+  if(tu==1){
     teki.x +=3;
   }
   else if(tu==2){
@@ -152,7 +151,7 @@ if(stage==3){  if(tu==0){
   }
   else if(stage==2){
     startpositionx=280
-    startpositiony=174
+    startpositiony=174    
   }
   else if(stage==3){
     startpositionx=0
